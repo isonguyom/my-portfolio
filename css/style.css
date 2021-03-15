@@ -1,0 +1,636 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 100%;
+}
+
+:root {
+  --primary-color: gold;
+  --sec-color: black;
+  --primary--font: 'Courier New', Courier, monospace;
+  --heading-font: 'oleo script';
+  ;
+}
+
+body {
+  background: linear-gradient(black, #3d3c3c);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: var(--primary--font);
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  min-height: 100vh;
+  padding: 2em 1em;
+}
+
+h4 {
+  margin-bottom: 1.5em;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--heading-font);
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* =====================Navigation====================== */
+.hamburger {
+  padding: 5px;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 1em;
+}
+
+.main-nav {
+  display: none;
+}
+
+.mobile-nav {
+  list-style: none;
+  position: fixed;
+  background-color: var(--primary-color);
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  top: -100%;
+  padding: 5.5em 1em;
+}
+
+.mobile-nav.display-menu {
+  top: 0;
+}
+
+.mobile-nav li {
+  padding: 1.5em 1em;
+}
+
+.mobile-nav li a {
+  color: black;
+  font-family: var(--heading-font);
+  text-decoration: none;
+}
+
+.mobile-nav li a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.mobile-nav span.social-nav {
+  margin-top: 20px;
+  display: block;
+}
+
+.mobile-nav span.social-nav li {
+  display: inline;
+  padding: 1em;
+}
+
+/* =====================Landing Page =========================== */
+.landing-page {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "playfair display", georgia, serif;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  /* background: url("../images/output-onlinejpgtools-removebg-preview.png") no-repeat top right; */
+}
+
+.fading-ball,
+.static-ball {
+  opacity: 0;
+  width: 50px;
+  border-radius: 100%;
+  height: 50px;
+  background-color: var(--primary-color);
+  position: absolute;
+  right: 3em;
+  top: 1.5em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: var(--heading-font);
+  box-shadow: 3px 3px 5px rgba(122, 122, 122, 0.2), -3px -3px 5px rgba(122, 122, 122, 0.19);
+}
+
+.static-ball {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1.4);
+}
+
+.welcome-text {
+  margin: 0 auto;
+}
+
+
+.welcome-text h1 {
+  color: var(--primary-color);
+  margin-top: -0.1em;
+  margin-bottom: 0.3em;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.welcome-text p {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.welcome-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  font-family: "playfair display", georgia, serif;
+}
+
+.welcome-btn {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 80px;
+  display: block;
+}
+
+.welcome-btn span {
+  font-size: 2rem;
+  padding-left: 0.3em;
+  height: 80px;
+  display: inline-block;
+}
+
+.welcome-btn:hover {
+  color: gray;
+  transform: scale(0.9);
+  transform-origin: left;
+  transition: transform 1s ease;
+}
+
+/* =================About Me Section ===================== */
+.about-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background: url("../images/about-bg.jpg") center no-repeat fixed;
+  background-size: cover;
+  background-color: rgb(39, 39, 39);
+  background-blend-mode: soft-light;
+}
+
+
+.about-section>div:not(:last-child) {
+  margin-bottom: 3em;
+}
+
+.about-me {
+  order: 1;
+}
+
+.skills {
+  order: 2;
+}
+
+.tools {
+  order: 3;
+  width: 100%;
+}
+
+.skills>div:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+.tools p {
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 0.6em;
+}
+
+.tools progress {
+  width: 100%;
+}
+
+/* ========================Portfolio Section========================= */
+.works {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.works>div {
+  position: relative;
+}
+
+.work-des {
+  background-color: rgba(0, 0, 0, 0.377);
+  background-blend-mode: soft-light;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.work-des h3 {
+  padding: 0.5em;
+  background-color: var(--primary-color);
+  color: black;
+  font-size: 1rem;
+  width: fit-content;
+  display: inline;
+  vertical-align: bottom;
+  text-transform: capitalize;
+  line-height: 2em;
+}
+
+.work-des:hover {
+  background-color: rgba(255, 217, 0, 0.281);
+}
+
+.work-cover:hover .work-img {
+  transform: scale(0.9);
+  animation: reduce 1.5s ease-in-out;
+}
+
+@keyframes reduce {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.9);
+  }
+}
+
+/* ======================Contact Me Section========================== */
+#googlemaps {
+  height: 91%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.contact {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background: black;
+  height: 100%;
+  opacity: .8;
+  color: white;
+}
+
+.contact form {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1em;
+  z-index: 1;
+}
+
+.contact form input,
+textarea {
+  width: 100%;
+  padding: 1em;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  cursor: pointer;
+  border: none;
+}
+
+.contact form input:focus,
+textarea:focus {
+  border: 2px solid var(--primary-color);
+  outline: none;
+}
+
+.contact h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-align: center;
+}
+
+
+.copyright {
+  padding: 1em;
+  z-index: 10;
+}
+
+.copyright span {
+  color: var(--primary-color);
+}
+
+footer {
+  position: relative;
+}
+
+/* ========================Projects Pages======================== */
+.project {
+  margin: 0 auto;
+  padding-top: 3em;
+}
+
+.project-img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.project-img p {
+  text-align: left;
+}
+
+.project-title {
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+}
+
+.adasun {
+  color: forestgreen;
+}
+
+.signup-form {
+  color: #0389f7;
+}
+
+.vedia {
+  color: yellowgreen;
+}
+
+.portfo {
+  color: var(--primary-color);
+}
+
+.project-des a {
+  color: var(--primary-color);
+  /* text-decoration: none; */
+}
+
+@media screen and (min-width: 500px) {
+  section {
+    padding: 4em 2.5em;
+  }
+
+  nav {
+    padding: 1em 0;
+  }
+
+  .mobile-nav li a {
+    font-size: 2rem;
+    padding: 1em 0;
+  }
+
+  .copyright {
+    padding: 1em 2.5em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  section {
+    padding: 4em 3.5em;
+  }
+
+  nav {
+    padding: 1em 0;
+  }
+
+  .copyright {
+    padding: 1em 3.5em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  section {
+    padding: 4em 2em;
+  }
+
+  nav {
+    padding: 2em 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .copyright {
+    padding: 1em 2em;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .main-nav {
+    display: block !important;
+    position: relative;
+    height: auto;
+    padding: 0;
+    background: transparent;
+    z-index: 10;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    padding: 0.2em;
+  }
+
+  .main-nav li a {
+    color: white;
+    font-family: var(--heading-font);
+    text-decoration: none;
+  }
+
+  .main-nav li a:hover {
+    color: var(--primary-color);
+  }
+
+  .main-nav span.social-nav {
+    float: right;
+    margin-top: 0;
+  }
+
+  .main-nav span.social-nav li {
+    padding: 0.2em 1em;
+  }
+
+  .landing-page {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+
+  .fading-ball,
+  .static-ball {
+    left: 0;
+    right: 0;
+    top: 3em;
+    width: 70px;
+    height: 70px;
+  }
+
+
+  .landing-page p {
+    font-size: 1rem;
+  }
+
+  .about-me {
+    text-align: center;
+  }
+
+  .about-me p {
+    font-size: 1.3rem;
+  }
+
+  .skills,
+  .tools {
+    width: 45%;
+  }
+
+  .tools {
+    text-align: right;
+  }
+
+  .tools p {
+    line-height: 2em;
+  }
+
+  .works>div {
+    width: 50%;
+  }
+
+  .works>div img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .project-img {
+    margin-bottom: 0;
+    margin-right: 2em;
+  }
+
+  .project-des {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  section {
+    padding: 3em 5em;
+  }
+
+  nav {
+    padding: 2em 4em;
+  }
+
+  .copyright {
+    padding: 1em 5em;
+  }
+
+  .main-nav li {
+    padding: 0.2em 1em;
+  }
+
+  .welcome-text h1 {
+    font-size: 4rem;
+  }
+
+  .welcome-text h3 {
+    font-size: 3rem;
+  }
+
+
+  .about-section>div {
+    margin: 0;
+    height: 100vh;
+  }
+
+  .about-me {
+    order: 2;
+    width: 50%;
+    padding: 2em 1em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-me h4 {
+    width: 100%;
+  }
+
+  .skills,
+  .tools {
+    order: 1;
+    width: 20%;
+    padding: 2em 0;
+  }
+
+  .tools {
+    order: 3;
+  }
+
+  .skills h1,
+  .tools h1 {
+    margin-bottom: 1em;
+  }
+
+  .contact form {
+    width: 60%;
+  }
+}
