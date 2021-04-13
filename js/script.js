@@ -27,6 +27,9 @@ hamburger.addEventListener("click", displayMenu)
 
 
 //function for changing of icon on hovering
+let skill1 = document.querySelector(".skil1");
+let skill2 = document.querySelector(".skil2");
+let skill3 = document.querySelector(".skil3");
 let changeIcon = function (icon, iconId) {
     document.getElementById(iconId).src = icon;
 }
