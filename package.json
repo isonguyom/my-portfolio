@@ -1,0 +1,26 @@
+{
+  "name": "isonguyomartin",
+  "version": "1.0.0",
+  "description": "Frontend developer portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isonguyom/my-portfolio.git"
+  },
+  "keywords": [
+    "frontend",
+    "developer",
+    "maritime digitalization",
+    "responsive web",
+    "wordpress"
+  ],
+  "author": "Martin Isonguyo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isonguyom/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/isonguyom/my-portfolio#readme"
+}

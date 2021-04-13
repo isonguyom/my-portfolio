@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Web Development, Web Design, Branding, UI/UX Design, Frontend, Maritime Digitalization">
+    <meta name="description" content="Portfolio Website">
+    <meta name="author" content="Martin Isonguyo">
+    <link rel="icon" type="image/png" href="./images/my-logo.png" />
+    <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Martin Isonguyo</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="darkModeBtn" class="btn">dark mode</button>
+            <div class="logo logo-main">
+                <a href="./index.html"><img id="logo" src="./images/my-logo.png" alt="logo"></a>
+            </div>
+            <div class="logo logo-white">
+                <a href="./index.html"><img id="logo2" src="./images/logo-white.png" alt="logo"></a>
+            </div>
+            <div class="main-nav">
+                <ul class="main-menu">
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <!-- <li><a href="#blog">Blog</a></li> -->
+                </ul>
+                <ul class="social-menu">
+                    <li>
+                        <a href="https://www.linkedin.com/in/martin-isonguyo-323612146/" target="_blank"
+                            title="Linked in">
+                            <i class="im im-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/IsonguyoM" target="_blank" title="Twitter">
+                            <i class="im im-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/isonguyom" target="_blank" title="Github">
+                            <i class="im im-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <div class="hamburger-inner">
+                    <input class="hamburger-cheeckbox" type="checkbox" />
+                    <div>
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="welcome-text">
+            <p class="hello">Hello! I'm </p>
+            <h1 class="name">Martin Isonguyo</h1>
+            <p class="role">Frontend Developer</p>
+            <a class="welcome-btn" href="#aboutMe">Get to know me</a>
+        </div>
+    </header>
+    <div class="wrapper">
+        <aside>
+            <section id="aboutMe">
+                <h2 class="title">About Me</h2>
+                <div class="profile-img">
+                    <img src="./images/martin.png" alt="martin">
+                </div>
+                <div class="about-me">
+                    <p>
+                        I'm passionate, I'm creative, I'm a team player, and an avid learner. <br><br>
+                        My name is Martin Isonguyo, from Akwa Ibom State in Nigeria.
+                        I studied Marine Engineering at Regional Maritime University, Accra, Ghana.
+
+                        <br><br>
+                        I'm a skilled Frontend developer with keen interest in Maritime Digitalization.
+                    </p>
+                </div>
+            </section>
+            <section class="aside-footer">
+                <div>
+                    <h2 class="title">Contact me</h2>
+                    <address>
+                        Mail: <a href="mailto:isonguyombiz@gmail.com">isonguyombiz@gmail.com</a><br>
+                        Tel: <a href="tel:+2348158412363">+2348158412363</a>
+                    </address>
+                </div>
+                <ul class="social-menu">
+                    <li>
+                        <a href="https://www.linkedin.com/in/martin-isonguyo-323612146/" target="_blank"
+                            title="Linked in">
+                            <i class="im im-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/IsonguyoM" target="_blank" title="Twitter">
+                            <i class="im im-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/isonguyom" target="_blank" title="Github">
+                            <i class="im im-github"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    &copy; 2021 <img src="./images/logo-white.png" alt="logo"> Martin Isonguyo
+                </div>
+            </section>
+        </aside>
+
+        <main>
+            <section class="skills" id="skills">
+                <h2 class="title">Skills</h2>
+                <div class="skills-wrapper">
+                    <div class="skill skill1" onmouseover="changeIcon('./images/web-dev2.png', 'skill1Icon')"
+                        onmouseout="changeIcon('./images/web-dev.png', 'skill1Icon')">
+                        <img id="skill1Icon" src="./images/web-dev.png" alt="Web dev">
+                        <h3>Web Development</h3>
+                        <p>
+                            Amazing websites are simple and clean. Minimalism is the concept, and my concept is
+                            minimalism.
+                        </p>
+                    </div>
+                    <div class="skill skill2" onmouseover="changeIcon('./images/wordpress2.png', 'skill2Icon')"
+                        onmouseout="changeIcon('./images/wordpress.png', 'skill2Icon')">
+                        <img id="skill2Icon" src="./images/wordpress.png" alt="wordpress">
+                        <h3>Wordpress</h3>
+                        <p>
+                            Wordpress is the go-to destination for most CMS based websites.
+                            I build good and efficient wordpress websites.
+                        </p>
+                    </div>
+                    <div class="skill skill3" onmouseover="changeIcon('./images/responsive-design2.png', 'skill3Icon')"
+                        onmouseout="changeIcon('./images/responsive-design.png', 'skill3Icon')">
+                        <img id="skill3Icon" src="./images/responsive-design.png" alt="responsive web">
+                        <h3>Responsive Website</h3>
+                        <p>
+                            It's important a website adapts to any device on which it is opened. My websites are
+                            mobile-friendly and responsive.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="tools">
+                <h2 class="title">Tools/Languages</h2>
+                <div class="tools-wrapper">
+                    <div class="tool">
+                        <div class="tool-inner">
+                            <div class="tool-icon">
+                                <img src="./images/html.svg" alt="html">
+                            </div>
+                            <div class="flip">
+                                <h3>HTML5</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool">
+                        <div class="tool-inner">
+                            <div class="tool-icon">
+                                <img src="./images/css.svg" alt="css">
+                            </div>
+                            <div class="flip">
+                                <h3>CSS</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool">
+                        <div class="tool-inner">
+                            <div class="tool-icon">
+                                <img src="./images/javascript.svg" alt="javascript">
+                            </div>
+                            <div class="flip">
+                                <h3>JavaScript</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool">
+                        <div class="tool-inner">
+                            <div class="tool-icon">
+                                <img src="./images/bootstrap.svg" alt="bootstrap">
+                            </div>
+                            <div class="flip">
+                                <h3>Bootstrap</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool">
+                        <div class="tool-inner">
+                            <div class="tool-icon">
+                                <img src="./images/sass.svg" alt="scss">
+                            </div>
+                            <div class="flip">
+                                <h3>SCSS</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tool">
+                        <div class="tool-inner">
+                            <div class="tool-icon">
+                                <img src="./images/inkscape.svg" alt="inkscape">
+                            </div>
+                            <div class="flip">
+                                <h3>Inkscape</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio" id="portfolio">
+                <h2 class="title">Portfolio</h2>
+                <div class="projects">
+                    <div class="project">
+                        <div class="project-img">
+                            <img class="work-img" src="./images/tiptop.png" alt="tiptop design">
+                        </div>
+                        <div class="work-des">
+                            <h3>Tiptop Design Agency</h3>
+                                <a target="_blank" class="btn" href="https://tiptopdesign.netlify.app/">Go
+                                    Live</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-img">
+                            <img class="work-img" src="./images/vedia.png" alt="vedia">
+                        </div>
+                        <div class="work-des">
+                            <h3>Ventus Digital Agency (VeDiA)</h3>
+                                <a target="_blank" class="btn" href="https://vedia.netlify.app/">Go
+                                    Live</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-img">
+                            <img class="work-img" src="./images/jupitasports.png" alt="jupitasports">
+                        </div>
+                        <div class="work-des">
+                            <h3>Jupitasports</h3>
+                                <a target="_blank" class="btn" href="https://jupitasports.com/">Go Live</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-img">
+                            <img class="work-img" src="./images/signup-form.png" alt="Signup Form">
+                        </div>
+                        <div class="work-des">
+                            <h3>Form with JavaScript authentication </h3>
+                                <a target="_blank" class="btn"
+                                    href="https://bluesignupform.netlify.app/">Go Live</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="blog">
+                <div>
+                    <img src="" alt="" srcset="">
+                    <h2></h2>
+                    <p></p>
+                </div>
+                <div>
+                    <img src="" alt="" srcset="">
+                    <h2></h2>
+                    <p></p>
+                </div>
+                <div>
+                    <img src="" alt="" srcset="">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </section> -->
+        </main>
+
+    </div>
+    <footer>
+
+        <section class="bottom-footer">
+            <h3 class="title">Contact me</h3>
+            <address>
+                Mail: <a href="mailto:isonguyombiz@gmail.com">isonguyombiz@gmail.com</a><br>
+                Tel: <a href="tel:+2348158412363">+2348158412363</a>
+            </address>
+            <ul class="social-menu">
+                <li>
+                    <a href="https://www.linkedin.com/in/martin-isonguyo-323612146/" target="_blank" title="Linked in">
+                        <i class="im im-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/IsonguyoM" target="_blank" title="Twitter">
+                        <i class="im im-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/isonguyom" target="_blank" title="Github">
+                        <i class="im im-github"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+        <div class="copyright">
+            &copy; 2021 <img src="./images/my-logo.png" alt="logo"> Martin Isonguyo
+        </div>
+    </footer>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
