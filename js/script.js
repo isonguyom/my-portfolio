@@ -9,7 +9,7 @@ let displayMenu = function () {
     let mainNav = document.querySelector(".main-nav");
     let hamburgerBar1 = document.querySelector(".bar1");
     let hamburgerBar2 = document.querySelector(".bar2");
-    let welcomeBtn = document.querySelector(".welcome-btn")
+    let welcomeBtn = document.querySelector(".welcome-btn");
     let logoMain = document.querySelector('.logo-main');
     let logoWhite = document.querySelector('.logo-white');
 
@@ -22,17 +22,17 @@ let displayMenu = function () {
     logoMain.classList.toggle('hide-logo');
     logoWhite.classList.toggle('display-logo');
 };
-hamburger.addEventListener("click", displayMenu)
+hamburger.addEventListener("click", displayMenu);
 
 
 
 //function for changing of icon on hovering
-let skill1 = document.querySelector(".skil1");
-let skill2 = document.querySelector(".skil2");
-let skill3 = document.querySelector(".skil3");
+// let skill1 = document.querySelector(".skil1");
+// let skill2 = document.querySelector(".skil2");
+// let skill3 = document.querySelector(".skil3");
 let changeIcon = function (icon, iconId) {
     document.getElementById(iconId).src = icon;
-}
+};
 
 
 //make aside element draggable on large screen
@@ -91,7 +91,7 @@ let toggleDarkMode = function () {
     let site = document.body;
     site.classList.toggle("dark-mode");
     darkModeText();
-}
+};
 darkModeToggler.addEventListener("click", toggleDarkMode);
 
 let darkModeText = function () {
@@ -100,4 +100,4 @@ let darkModeText = function () {
     } else {
         darkModeToggler.innerHTML = "dark mode";
     }
-}
+};
