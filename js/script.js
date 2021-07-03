@@ -25,16 +25,6 @@ let displayMenu = function () {
 hamburger.addEventListener("click", displayMenu);
 
 
-
-//function for changing of icon on hovering
-// let skill1 = document.querySelector(".skil1");
-// let skill2 = document.querySelector(".skil2");
-// let skill3 = document.querySelector(".skil3");
-let changeIcon = function (icon, iconId) {
-    document.getElementById(iconId).src = icon;
-};
-
-
 //make aside element draggable on large screen
 document.addEventListener('DOMContentLoaded', function () {
     let sidebar = document.querySelector('aside');
@@ -101,3 +91,31 @@ let darkModeText = function () {
         darkModeToggler.innerHTML = "dark mode";
     }
 };
+
+
+//JQUERY CODES
+$(document).ready(function () {
+
+    //CHANGE IMAGE ON MOUSEOVER AND MOUSEOUT
+    //Skill1 hovering
+    $(".skill1").hover(function () {
+        $( '#skill1Icon' ).attr("src","./images/web-dev2.png");
+    }, function () {
+        $( '#skill1Icon' ).attr("src","./images/web-dev.png");
+    });
+    
+    //Skill2 hovering
+    $(".skill2").hover(function () {
+        $( '#skill2Icon' ).attr("src","./images/wordpress2.png");
+    }, function () {
+        $( '#skill2Icon' ).attr("src","./images/wordpress.png");
+    });
+    
+    //Skill3 hovering
+    $(".skill3").hover(function () {
+        $( '#skill3Icon' ).attr("src","./images/responsive-design2.png");
+    }, function () {
+        $( '#skill3Icon' ).attr("src","./images/responsive-design.png");
+    });
+
+});

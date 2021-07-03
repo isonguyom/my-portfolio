@@ -57,7 +57,7 @@ img {
 }
 
 .title {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   font-size: 1.2rem;
   color: $primaryColor;
 }
@@ -213,7 +213,7 @@ header {
         width: 100%;
 
         li {
-          padding: 4em 0;
+          padding: 3.5em 0;
         }
       }
 
@@ -329,6 +329,7 @@ main {
           display: block;
           margin: 0 auto;
           transition-delay: -0.5s;
+          transition-duration: .2s;
         }
 
         h3 {
@@ -623,7 +624,7 @@ ul.social-menu {
         ul.social-menu {
           position: absolute;
           right: 5%;
-          top: 50%;
+          top: 45%;
           transform: translate(0, -50%);
           -ms-transform: translate(0, -50%);
 
