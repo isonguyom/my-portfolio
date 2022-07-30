@@ -497,7 +497,8 @@ ul.social-menu {
 
       h3 {
         color: white;
-        text-transform: uppercase;
+        text-transform: capitalize;
+        font-weight: 500;
       }
 
       .btn {
