@@ -99,9 +99,9 @@ $(document).ready(function () {
     //CHANGE IMAGE ON MOUSEOVER AND MOUSEOUT
     //Skill1 hovering
     $(".skill1").hover(function () {
-        $( '#skill1Icon' ).attr("src","./images/web-dev2.png");
+        $( '#skill1Icon' ).attr("src","./images/responsive-design2.png");
     }, function () {
-        $( '#skill1Icon' ).attr("src","./images/web-dev.png");
+        $( '#skill1Icon' ).attr("src","./images/responsive-design.png");
     });
     
     //Skill2 hovering
@@ -113,9 +113,9 @@ $(document).ready(function () {
     
     //Skill3 hovering
     $(".skill3").hover(function () {
-        $( '#skill3Icon' ).attr("src","./images/responsive-design2.png");
+        $( '#skill3Icon' ).attr("src","./images/ui-design2.png");
     }, function () {
-        $( '#skill3Icon' ).attr("src","./images/responsive-design.png");
+        $( '#skill3Icon' ).attr("src","./images/ui-design.png");
     });
 
 });

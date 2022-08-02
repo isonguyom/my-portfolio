@@ -50,9 +50,13 @@ img {
 }
 
 .title {
-  margin-bottom: 2em;
+  margin-bottom: 1.4em;
   font-size: 1.2rem;
   color: purple;
+}
+
+.aside-footer .title {
+  margin-bottom: 0.5em;
 }
 
 #darkModeBtn {
@@ -216,12 +220,13 @@ header div.welcome-text .name {
 header div.welcome-text .role {
   margin: 1em 0;
   font-size: 1.5rem;
+  line-height: 30px;
 }
 header div.welcome-text .welcome-btn {
   border: 1px solid purple;
   border-radius: 20px;
   width: fit-content;
-  padding: 0.8em;
+  padding: 0.5em 1em;
   margin-top: 2em;
   color: purple;
   z-index: 10;
@@ -285,6 +290,14 @@ main .skills .skills-wrapper .skill:hover {
   color: white;
   transform: scale(1.03);
 }
+main .langs .langs-wrapper {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
 main .tools .tools-wrapper {
   display: flex;
   display: -webkit-flex;
@@ -292,6 +305,19 @@ main .tools .tools-wrapper {
   justify-content: space-between;
   position: relative;
   width: 100%;
+}
+main .tools .tools-wrapper .tool {
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0.8em;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 0.8rem;
+}
+main .tools .tools-wrapper .tool img {
+  height: 70px;
+  margin-bottom: 0.7em;
 }
 
 footer .bottom-footer {
@@ -324,26 +350,27 @@ ul.social-menu li {
   padding-right: 2em;
 }
 
-.tool {
-  width: 250px;
-  height: 250px;
+.lang {
+  width: 150px;
+  height: 150px;
   margin: 0 auto 2em;
   perspective: 1000px;
   position: relative;
 }
-.tool .tool-inner {
+.lang .lang-inner {
   width: 100%;
   height: 100%;
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
+  font-size: 1rem;
 }
-.tool .tool-inner .tool-icon img {
+.lang .lang-inner .lang-icon img {
   width: 50%;
 }
 
 .flip,
-.tool-icon {
+.lang-icon {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -368,7 +395,7 @@ ul.social-menu li {
   background-color: purple;
 }
 
-.tool:hover .tool-inner {
+.lang:hover .lang-inner {
   transform: rotateY(180deg);
 }
 
@@ -413,13 +440,14 @@ ul.social-menu li {
 }
 .projects .project .work-des h3 {
   color: white;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight: 500;
 }
 .projects .project .work-des .btn {
   border: 1px solid purple;
   border-radius: 20px;
   width: fit-content;
-  padding: 0.5em 0.8em;
+  padding: 0.3em 0.8em;
   background-color: white;
   color: purple;
 }
@@ -585,7 +613,7 @@ ul.social-menu li {
     flex: 0 0 66.6666%;
     height: fit-content;
   }
-  main .skills {
+  main .lang {
     padding-top: 1em;
   }
 
